@@ -12,6 +12,11 @@ body,
   height: 100%;
 }
 
+body {
+  display: grid;
+  grid-template-rows: 80px 1fr 40px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -34,7 +39,9 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  background-image: url("pig-background.jpg");
+  background-size: contain;
+  height: 100%;
 }
 
 .content-box {
@@ -49,6 +56,10 @@ header > div {
   overflow: auto;
 }
 
+.content-box > * {
+  border-radius: 1rem;
+}
+
 .title {
   width: 600px;
   height: 100px;
@@ -56,24 +67,67 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
 }
 
 .testimony {
   border: solid;
   width: 400px;
   height: 200px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.testimony > div:first-child {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.testimony > div:nth-child(2) {
+  align-self: flex-start;
+  font-size: 1.2rem;
+  padding-left: 3rem;
 }
 
 .hours {
   border: solid;
   width: 400px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hours > div:first-child {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.hours > div:nth-child(n+2) {
+  text-align: center;
 }
 
 .location {
   border: solid;
   width: 400px;
   height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location > div:first-child {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.location > div:nth-child(n+2) {
+  text-align: center;
 }
 
 footer {
@@ -82,6 +136,5 @@ footer {
   align-items: center;
   background-color: beige;
   height: 40px;
-  margin-top: 10rem;
 }
 

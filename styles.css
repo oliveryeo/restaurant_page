@@ -20,9 +20,11 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background: lightblue;
+  background: lightpink;
   gap: 20px;
   padding-top: 10px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Make header the top element as its the only z-index */
 }
 
 header > div {
@@ -51,13 +53,16 @@ header > div {
   align-items: center;
   width: 900px;
   height: 1000px;
-  background-color: orange;
+  background-color: lightpink;
   border-radius: 20px;
   overflow: auto;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-.content-box > * {
+.content-box > div {
   border-radius: 1rem;
+  border-width: 5px;
+  border-color: rgba(233 136 138);
 }
 
 .title {
@@ -68,6 +73,20 @@ header > div {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  position: relative;
+}
+
+.title > img {
+  height: 100px;
+  position: absolute;
+}
+
+.title > img[src="pig_1.png"] {
+  left: 0px;
+}
+
+.title > img[src="pig_2.png"] {
+  right: 0px;
 }
 
 .testimony {

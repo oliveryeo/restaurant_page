@@ -41,7 +41,7 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("pig-background.jpg");
+  background-image: url("pig_background.jpg");
   background-size: contain;
   height: 100%;
 }
@@ -81,11 +81,11 @@ header > div {
   position: absolute;
 }
 
-.title > img[src="pig_1.png"] {
+.title > img:first-child { /* Select the first image */
   left: 0px;
 }
 
-.title > img[src="pig_2.png"] {
+.title > img:last-child { /* Select the second image */
   right: 0px;
 }
 
@@ -157,3 +157,6 @@ footer {
   height: 40px;
 }
 
+.selected-tab {
+  background-color: rgba(233 136 138);
+}

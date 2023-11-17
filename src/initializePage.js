@@ -22,7 +22,7 @@ const initializePage = () => {
   body.appendChild(footer);
 
   // Load up the homepage
-  loadMenuTab();
+  loadHomeTab();
 }
 
 export default initializePage;

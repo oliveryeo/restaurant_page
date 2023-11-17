@@ -1,4 +1,5 @@
 import loadHomeTab from './homePage';
+import loadMenuTab from './menuPage';
 
 const initializePage = () => {
   const body = document.querySelector('body');
@@ -21,7 +22,7 @@ const initializePage = () => {
   body.appendChild(footer);
 
   // Load up the homepage
-  loadHomeTab();
+  loadMenuTab();
 }
 
 export default initializePage;

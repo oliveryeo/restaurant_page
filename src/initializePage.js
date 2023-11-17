@@ -4,9 +4,9 @@ const initializePage = () => {
   const body = document.querySelector('body');
 
   const header = document.createElement('header');
-  const header_home = document.createElement('div');
-  const header_menu = document.createElement('div');
-  const header_contact = document.createElement('div');
+  const header_home = document.createElement('button');
+  const header_menu = document.createElement('button');
+  const header_contact = document.createElement('button');
   header_home.textContent = "Home";
   header_menu.textContent = "Menu";
   header_contact.textContent = "Contact";

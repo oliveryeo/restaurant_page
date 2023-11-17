@@ -20,14 +20,14 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background: lightpink;
+  background-color: lightpink;
   gap: 20px;
   padding-top: 10px;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; /* Make header the top element as its the only z-index */
 }
 
-header > div {
+header > button {
   height: 60px;
   width: 100px;
   border: solid;
@@ -35,6 +35,11 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
+}
+
+header > button:hover {
+  cursor: pointer;
 }
 
 #content {

@@ -7,6 +7,7 @@ import pig_2 from './pig_2.png';
 const loadHomeTab = () => {
   wipePage();
   // Create title, testimony, hours, location then append to contentBox, then append to #content
+  // Title
   const title = document.createElement('div');
   title.classList.add('title');
   const pigIcon_1 = new Image();
@@ -17,6 +18,7 @@ const loadHomeTab = () => {
   title.innerHTML += "Pig Pig Family's Teahouse";
   title.appendChild(pigIcon_2);
 
+  // Testimony
   const testimony = document.createElement('div');
   testimony.classList.add('testimony');
   
@@ -29,6 +31,7 @@ const loadHomeTab = () => {
   testimony.appendChild(testimony_text);
   testimony.appendChild(testimony_author);
 
+  // Hours
   const hours = document.createElement('div');
   hours.classList.add('hours');
   const hours_title = document.createElement('div');
@@ -58,6 +61,7 @@ const loadHomeTab = () => {
   hours.appendChild(hours_friday);
   hours.appendChild(hours_saturday);
 
+  // Location
   const location = document.createElement('div');
   location.classList.add('location');
   const location_title = document.createElement('div');
@@ -69,6 +73,7 @@ const loadHomeTab = () => {
   location.appendChild(location_title);
   location.appendChild(location_description);
 
+    // Append everything to #content
   const contentBox = document.createElement('div');
   contentBox.classList.add('content-box');
   contentBox.appendChild(title);

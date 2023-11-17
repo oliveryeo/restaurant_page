@@ -1,5 +1,6 @@
 import loadHomeTab from './homePage';
 import loadMenuTab from './menuPage';
+import loadContactTab from './contactPage';
 
 const initializePage = () => {
   const body = document.querySelector('body');

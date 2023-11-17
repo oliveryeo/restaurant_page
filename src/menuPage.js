@@ -90,7 +90,7 @@ const loadMenuTab = () => {
   content.appendChild(contentBox);
 
   const header = document.querySelector('header');
-  header.children[1].classList.add('selected-tab'); // 1st child is the home tab
+  header.children[1].classList.add('selected-tab'); // 1st child is the menu tab
 
 };
 

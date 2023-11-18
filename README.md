@@ -8,3 +8,6 @@ TOP Restaurant Page Project
   - inline-source-map: Helps to pinpoint which specific js file is the error coming from.
 - Demonstrate the use of DOM manipulation by javascript.
 - Demonstrate the use of javascript Modules.
+
+#Liveview of project
+https://oliveryeo.github.io/restaurant_page/
